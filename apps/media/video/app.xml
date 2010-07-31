@@ -1,0 +1,11 @@
+<bibud>
+	<app>
+		<title>Video</title>
+		<longname>Video Player</longname>
+		<description>Play videos from your disk or the Internet</description>
+		<shortname>video</shortname>
+		<category>media</category>
+		<minlevel>1</minlevel>
+		<icon>icon.png</icon>
+	</app>
+</bibud>

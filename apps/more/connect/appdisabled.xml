@@ -1,0 +1,11 @@
+<bibud>
+	<app>
+		<title>Connect</title>
+		<longname>Connect</longname>
+		<description>Connect and remotely administrate other machines</description>
+		<shortname>connect</shortname>
+		<category>more</category>
+		<minlevel>1</minlevel>
+		<icon>icon.png</icon>
+	</app>
+</bibud>

@@ -1,0 +1,11 @@
+<bibud>
+	<app>
+		<title>Microblog</title>
+		<longname>Microblogging client</longname>
+		<description>Services such as Twitter, identi.ca, StatusNet, etc.</description>
+		<shortname>microblog</shortname>
+		<category>internet</category>
+		<minlevel>1</minlevel>
+		<icon>icon.png</icon>
+	</app>
+</bibud>

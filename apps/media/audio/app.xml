@@ -1,0 +1,11 @@
+<bibud>
+	<app>
+		<title>Audio</title>
+		<longname>Audio Player</longname>
+		<description>Plays all your music, plus services from the Internet</description>
+		<shortname>audio</shortname>
+		<category>media</category>
+		<minlevel>1</minlevel>
+		<icon>icon.png</icon>
+	</app>
+</bibud>

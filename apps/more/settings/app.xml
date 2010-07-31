@@ -1,0 +1,11 @@
+<bibud>
+	<app>
+		<title>Settings</title>
+		<longname>System Settings</longname>
+		<description>Configure the system</description>
+		<shortname>settings</shortname>
+		<category>more</category>
+		<minlevel>5</minlevel>
+		<icon>icon.png</icon>
+	</app>
+</bibud>

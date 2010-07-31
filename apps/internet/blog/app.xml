@@ -1,0 +1,11 @@
+<bibud>
+	<app>
+		<title>Blog</title>
+		<longname>Blogging Application</longname>
+		<description>Post pages to the public</description>
+		<shortname>blog</shortname>
+		<category>internet</category>
+		<minlevel>1</minlevel>
+		<icon>icon.png</icon>
+	</app>
+</bibud>

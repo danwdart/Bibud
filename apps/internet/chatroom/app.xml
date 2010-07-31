@@ -1,0 +1,11 @@
+<bibud>
+	<app>
+		<title>Chatroom</title>
+		<longname>Chatroom</longname>
+		<description>Chat to the public</description>
+		<shortname>chatroom</shortname>
+		<category>internet</category>
+		<minlevel>1</minlevel>
+		<icon>icon.png</icon>
+	</app>
+</bibud>

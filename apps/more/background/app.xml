@@ -1,0 +1,11 @@
+<bibud>
+	<app>
+		<title>Background</title>
+		<longname>Desktop Background</longname>
+		<description>Change your wallpaper</description>
+		<shortname>background</shortname>
+		<category>more</category>
+		<minlevel>1</minlevel>
+		<icon>icon.png</icon>
+	</app>
+</bibud>

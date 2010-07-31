@@ -1,0 +1,11 @@
+<bibud>
+	<app>
+		<title>Pictures</title>
+		<longname>Picture Viewer</longname>
+		<description>View all your pictures, plus services from the Internet</description>
+		<shortname>pictures</shortname>
+		<category>media</category>
+		<minlevel>1</minlevel>
+		<icon>icon.png</icon>
+	</app>
+</bibud>

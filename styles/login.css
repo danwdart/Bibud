@@ -1,0 +1,100 @@
+ 
+body {
+/* background-color: #111111; */
+background-color:#dddddd;;
+color:black;
+font-size:16pt;
+font-family: sans;
+}
+h1 {
+font-size: 24px;
+font-weight: 900;
+}
+h1,h2,h3,h4 {
+margin:0;
+padding:0;
+}
+h3 {
+text-align:center;
+}
+a img {
+border:none;
+}
+
+#username, #password {
+color:#999999;
+}
+
+#content {
+position:relative;
+/* background:url('http://xenon.hackerlanes.com/background.jpg'); */
+/* text-align:center; */
+/* display:table-cell; */
+/* vertical-align:middle; */
+width: 600px;
+margin:20px auto;
+height:576px;
+text-align:center;
+/* background-color:#000000; */
+/* color:#ffffff; */
+/* text-shadow:#000000 2px 2px 6px; */
+}
+
+.button {
+/* background-color:#e65b5b; */
+background-color:#ffffcc;
+color:black;
+}
+.text {
+background-color:#ffffcc;
+color:black;
+
+}
+
+input {
+font-size:16pt;
+/* color:black; */
+ -moz-border-radius:5px; 
+ -webkit-border-radius:5px; 
+/* padding:5px; */
+/* margin:2px; */
+height:40px;
+line-height:40px;
+
+}
+
+#forums {
+position:absolute;
+left:300px;
+top:520px;
+width:250px;
+height:20px;
+background-color:#ffffcc;
+padding:5px;
+font-size:12pt;
+border:1px solid black;
+-moz-border-radius:0px;
+-webkit-border-radius:0px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+-webkit-border-top-left-radius:10px;
+-webkit-border-top-right-radius:10px;
+}
+
+#blogs {
+position:absolute;
+left:580px;
+top:520px;
+width:250px;
+height:20px;
+background-color:#ffffcc;
+padding:5px;
+font-size:12pt;
+border:1px solid black;
+-moz-border-radius:0px;
+-webkit-border-radius:0px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+-webkit-border-top-left-radius:10px;
+-webkit-border-top-right-radius:10px;
+}

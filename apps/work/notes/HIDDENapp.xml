@@ -1,0 +1,11 @@
+<bibud>
+	<app>
+		<title>Notes</title>
+		<longname>Sticky Notes</longname>
+		<description>Note taking application</description>
+		<shortname>notes</shortname>
+		<category>work</category>
+		<minlevel>1</minlevel>
+		<icon>icon.png</icon>
+	</app>
+</bibud>

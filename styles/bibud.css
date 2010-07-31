@@ -1,0 +1,148 @@
+ * {
+padding:0;
+margin:0;
+}
+
+
+body {
+background: black url('../default/emotion1.jpg') repeat;
+font-size:12pt;
+font-family: sans;
+}
+h1 {
+font-size: 18pt;
+font-weight: 900;
+margin:2px;
+}
+h2 {
+font-size:16pt;
+font-weight:700;
+margin:2px;
+}
+h3 {
+font-size:14pt;
+font-weight:600;
+margin:2px;
+}
+
+#button_out {
+bottom:0px;
+left:0px;
+width:100%;
+max-width:100%;
+position:absolute;
+}
+
+#buttons {
+min-width:100%;
+max-width:10000px;
+position:absolute;
+overflow:auto;
+bottom:0px;
+text-align:center;
+/* display:table-cell; */
+vertical-align:middle;
+/* width: 1000px; */
+/* width:100%; */
+/*height:70px; */
+/* top:0px; */
+left:0px;
+/* background: #999999; */
+
+/* background: -moz-linear-gradient(top, #999,#aaa); */
+/* background: -webkit-gradient(linear, left top, right top, from(#999), to(#aaa)); */
+
+
+
+}
+#buttons input {
+height:40px;
+}
+.tab {
+height:70px;
+width:60px;
+margin:0px 5px;
+-moz-border-radius:0px;
+-webkit-border-radius:0px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+-webkit-border-top-left-radius:10px;
+-webkit-border-top-right-radius:10px;
+background-color:#eeeeee;
+font-size:7pt;
+font-weight:700;
+float:left;
+/*background: -moz-linear-gradient(top, #aaa,#ccc,#ddd,#ccc,#aaa);
+background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#fff));
+*/
+}
+.tab:hover {
+background-color:#cccccc;
+}
+.tab a {
+display:block;
+height:100%;
+color:#333333;
+text-decoration:none;
+}
+.tab a:hover {
+color:#333333;
+}
+
+#apps {
+position:absolute;
+width: 100%; /* 1000 */
+/* min-width:1024px; */
+height:auto;
+top:0px;
+left:0px;
+z-index:0;
+background-color:#000000;
+}
+.app_container {
+position:absolute;
+display:none;
+width:99%; /*1000px*/
+/*height:576px; */
+height:auto;
+left:0px;
+top:0px;
+}
+.app_large {
+position:absolute;
+display:none;
+width:99%; /* 990 */
+height:525px; /*541 */
+left:0px;
+top:25px;
+background-color:#dddddd;
+color:#000000;
+padding:0.5%;
+}
+
+.app_custom {
+position:absolute;
+display:none;
+}
+
+.app_small {
+position:absolute;
+display:none;
+width:24%; /* 240 */
+height:525px; /* 541 */
+left:75%; /* 750 */
+top:25px; /* 40 */
+background-color:#eeeeee;
+color:#000000;
+padding:0.5%;
+}
+.app_tiny {
+position:absolute;
+display:block;
+width:100%; /*1000 */
+height:25px;
+left:0px;
+top:0px;
+background-color:#333333;
+color:#ffffff;
+}

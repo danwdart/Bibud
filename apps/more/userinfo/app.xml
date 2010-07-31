@@ -1,0 +1,11 @@
+<bibud>
+	<app>
+		<title>User Info</title>
+		<longname>User Information</longname>
+		<description>Change your user information</description>
+		<shortname>userinfo</shortname>
+		<category>more</category>
+		<minlevel>1</minlevel>
+		<icon>icon.png</icon>
+	</app>
+</bibud>

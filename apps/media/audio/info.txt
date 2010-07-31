@@ -1,0 +1,4 @@
+AppName:Audio Player
+AppDescription:Listen to your music with this
+Icon:themes/crystal/musicstore.png
+DivName:audio

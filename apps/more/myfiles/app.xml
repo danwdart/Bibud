@@ -1,0 +1,11 @@
+<bibud>
+	<app>
+		<title>My Files</title>
+		<longname>My Files</longname>
+		<description>Manage my documents, pictures, videos, etc.</description>
+		<shortname>myfiles</shortname>
+		<category>more</category>
+		<minlevel>1</minlevel>
+		<icon>icon.png</icon>
+	</app>
+</bibud>

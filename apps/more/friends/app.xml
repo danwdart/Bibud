@@ -1,0 +1,11 @@
+<bibud>
+	<app>
+		<title>Friends</title>
+		<longname>Friends</longname>
+		<description>Add and manage people connections</description>
+		<shortname>friends</shortname>
+		<category>more</category>
+		<minlevel>1</minlevel>
+		<icon>icon.png</icon>
+	</app>
+</bibud>

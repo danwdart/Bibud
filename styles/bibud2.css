@@ -1,0 +1,85 @@
+ 
+body {
+background-color: black;
+font-size:12pt;
+font-family: sans;
+}
+h1 {
+font-size: 18pt;
+font-weight: 900;
+margin:2px;
+}
+h2 {
+font-size:16pt;
+font-weight:700;
+margin:2px;
+}
+h3 {
+font-size:14pt;
+font-weight:600;
+margin:2px;
+}
+
+#buttons {
+position:absolute;
+text-align:center;
+display:table-cell;
+vertical-align:middle;
+width: 1000px;
+height:25px;
+top:0px;
+left:0px;
+background-color:#999999;
+}
+#apps {
+position:absolute;
+width: 1000px;
+height:576px;
+top:25px;
+left:0px;
+z-index:0;
+background-color:#000000;
+}
+.app_container {
+position:absolute;
+display:none;
+width:1000px;
+height:576px;
+left:0px;
+top:0px;
+}
+.app_large {
+position:absolute;
+display:none;
+width:1000px;
+height:576px;
+left:0px;
+top:25px;
+background-color:#dddddd;
+color:#000000;
+padding:5px;
+}
+.app_small {
+position:absolute;
+display:none;
+width:250px;
+height:576px;
+left:750px;
+top:25px;
+background-color:#eeeeee;
+color:#000000;
+padding:5px;
+}
+.app_tiny {
+position:absolute;
+display:block;
+width:1000px;
+height:5px;
+left:0px;
+top:0px;
+background-color:#333333;
+color:#ffffff;
+}
+.app_tiny:hover {
+height:25px;
+}
