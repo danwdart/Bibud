@@ -3,7 +3,7 @@
 
 $server = "localhost";
 $username = "bibud";
-$password = "koolsound";
+$password = "password";
 $db = "bibud";
 
 if (!mysql_connect($server,$username,$password)) {
