@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen{
+	body{
+		//background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#666666), color-stop(.6,#333), to(#666666));
+		background-repeat:no-repeat;
+		background-color:#DDD;
+		background-size:100% 100px;
+		margin:0px auto;
+		width:400px;
+		font-family:Arial, Helvetica, sans-serif;
+		height:100%;
+	}
+	a{
+		text-decoration:none;
+	}
+	a:hover{
+		text-decoration:underline;
+	}
+	.cross{
+		float:right;
+		position:relative;
+		top:-40px;
+	}
+	header a:hover{
+		text-decoration:none;
+	}
+	.registration label{
+		width: 8.25em;
+		float: left;
+		text-align: right;
+		margin-right: 0.5em;
+		display: block
+	}
+	#main{
+	margin:0 auto;
+	padding:0;
+	}
+	#logo{
+		display: block;
+	    margin: 0px auto;
+	}
+	#version{
+		position: relative;
+		color:#f5bf39;
+		font-weight:bold;
+		left:95px;
+		top:-78px;
+		display:inline;
+	}
+	#username, #password{
+		color:#999;
+	}
+	.users{
+		list-style:none; 
+		display:block;
+		margin:0;
+		padding:10px;
+	}
+	.users a{
+		padding:10px;
+		display:block;
+	}
+	.users li:first-child{
+		border-top-left-radius:5px;
+		border-top-right-radius:5px;
+	}
+	.users li{
+		border:solid 1px #555;
+		border-bottom:none;
+		background:#FFF;
+	}
+	.users li:last-child{
+		border:solid 1px #555;
+		border-bottom-left-radius:5px;
+		border-bottom-right-radius:5px;
+	}
+	#login{
+		display:block;
+		text-align:center;
+	}
+	#login input{
+		background-color:#BEF;
+		-moz-border-radius:5px; 
+		border-radius:5px;
+		padding:5px;
+		font-size:18px;
+		display:inline-block;
+	}
+	.matrix ul {
+		display:block;
+		margin:0;
+		padding:0;
+	}
+	.matrix li{
+		list-style:none;
+		float:left;
+		width:198px;
+		border:solid 1px #000;
+		border-left:none;
+		border-bottom:none;
+		text-align:center;
+		background-color:#FFF;
+		padding: 10px 0 10px 0;
+		margin:0;
+	}
+	.matrix li:first-child{
+		border-top-left-radius:5px;
+		border-left:solid 1px #000;
+	}
+	.matrix li:nth-child(2){
+		border-top-right-radius:5px;
+	}
+	.matrix li:nth-last-child(2){
+		border-bottom-left-radius:5px;
+		border-bottom:solid 1px #000;
+	}
+	.matrix li:last-child{
+		border-bottom-right-radius:5px;
+		border-bottom:solid 1px #000;
+	}
+	.matrix li:nth-child(odd){
+		border-left:solid 1px #000;
+	}
+	#links{
+		clear: left;
+		text-align:center;
+		font-size:12px;
+	}
+	#links a{
+		text-decoration:none;
+	}
+	#links a:hover{
+		text-decoration:underline;
+	}
+}

@@ -29,15 +29,15 @@ document.form.password.style.color="#000000";
 }
 
 function bluruser() {
-if (document.form.username.value==document.form.username.defaultValue) {
-document.form.username.value=" Username ";
+if (document.form.username.value=="") {
+document.form.username.value="Username";
 document.form.username.style.color="#999999";
 }
 }
 
 function blurpass() {
-if (document.form.username.value==document.form.username.defaultValue) {
-document.form.password.value=" Password ";
+if (document.form.password.value=="") {
+document.form.password.value="Password";
 document.form.password.type="text";
 document.form.password.style.color="#999999";
 }

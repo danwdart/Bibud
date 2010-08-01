@@ -2,11 +2,12 @@
 session_start();
 include 'includes/db_connect.php';
 include 'includes/functions.php';
+
 if ($_POST['login'] == "Login") {
   $username = $_POST['username'];
   $password = $_POST['password'];
   $password = sha1($password);
-  $result = mysql_query("SELECT * FROM users WHERE lower(username) = lower('$username') AND `password` = '$password'");
+  $result = mysql_query("SELECT * FROM users WHERE `username` = '$username' AND `password` = '$password'");
   if (mysql_num_rows($result) == 1) {
     # We have login success! Set the variables and go back to index to make them permanent.
     $row=mysql_fetch_assoc($result);
@@ -16,14 +17,11 @@ if ($_POST['login'] == "Login") {
     $_SESSION['includes'] = dirname(__FILE__)."/includes";
     $_SESSION['scripts'] = dirname(__FILE__)."/scripts";
     $_SESSION['apps'] = dirname(__FILE__)."/apps";
-
-    $filesdir = dirname(__FILE__)."/user/".$_SESSION['user_id'];
+  
+    $filesdir = dirname(__FILE__)."/user/".$username;
+	if (!is_dir("user/")) { mkdir("user/"); }
       if (!is_dir($filesdir)) { mkdir($filesdir); }
     $_SESSION['filesdir'] = $filesdir;
-    # Now do relative from apps
-    $_SESSION['filesapps'] = "../../../user/".$_SESSION['user_id'];
-    # Now do relative from root
-    $_SESSION['filesroot'] = "user/".$_SESSION['user_id'];
     # Make variables easier to access
     foreach($row as $key => $value) {
       $_SESSION[$key]=$value;
@@ -42,8 +40,9 @@ if ($_POST['login'] == "Login") {
   else 	{
   header("Location: index.php?login=0");
   }
-}
-else {
+} elseif($_POST['login'] == "Rein") {
+echo "HAI";
+}else{
 echo "You cannot run the script like this!";
 }
 ?>

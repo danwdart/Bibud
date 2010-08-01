@@ -1,17 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-<!-- <link rel="stylesheet" type="text/css" href="register.css" />-->
-<style type="text/css">
-label {
-  width:200px;
-  text-align:right;
-  padding:2px;
-}
-</style>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-<title>Bibud - Register</title>
+<?php include"header.php"?>
 <script type="text/javascript">
 <!--
 function verify() {
@@ -39,19 +26,16 @@ return true;
 }
 // -->
 </script>
-</head>
-<body>
-<div class="main">
-<h1>Registration</h1>
+<div class="registration">
 <form action="registered.php" method="post" onSubmit="return verify();" >
-<br /><label>Username</label><input type="text" name="username" />
-<br /><label>First Name</label><input type="text" name="fname" />
-<br /><label>Last Name</label><input type="text" name="lname" />
-<br /><label>Password</label><input type="password" name="password" />
-<br /><label>Repeat Password</label><input type="password" name="password2" />
-<br /><label>Email Address (optional)</label><input type="text" name="email" />
+<br /><label><span style="color:#F00;font-size:12px;">*</span>Username</label><input type="text" name="username" />
+<br /><label><span style="color:#F00;font-size:12px;">*</span>First Name</label><input type="text" name="fname" />
+<br /><label><span style="color:#F00;font-size:12px;">*</span>Last Name</label><input type="text" name="lname" />
+<br /><label><span style="color:#F00;font-size:12px;">*</span>Password</label><input type="password" name="password" />
+<br /><label><span style="color:#F00;font-size:12px;">*</span>Repeat Password</label><input type="password" name="password2" />
+<br /><label>Email Address</label><input type="text" name="email" />
 <br /><label></label><input type="submit" name="submit" value="Register" />
 </div>
+<p style="font-size:12px;">fields marked with a <span style="color:#F00;">*</span> are required</p>
 </form>
-</body>
-</html>
+<?php include"footer.php"?>
