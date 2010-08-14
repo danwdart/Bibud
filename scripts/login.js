@@ -1,6 +1,17 @@
- function init() {
-document.form.username.focus();
-inittext();
+function init() {
+	document.form.username.focus();
+	inittext();
+	if(!supports_ogg){
+		document.getElementById("oggSupport").style.display = "block";
+	}
+}
+function supports_video() {
+  return !!document.createElement('video').canPlayType;
+}
+function supports_ogg() {
+	if (!supports_video()) { return false; }
+	var v = document.createElement("video");
+	return v.canPlayType('video/ogg; codecs="theora, vorbis"');
 }
 function register() {
 window.location="register.php";

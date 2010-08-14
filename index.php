@@ -15,6 +15,9 @@ if (isset($_SESSION['user_id'])) {
 else {
 ?>
 <?php include"header.php"?>
+<audio><div class="compwarn">It looks like your browser lacks HTML5 support. You may experience some loss of functionality, including the lack of ability to play audio and video. We recommend you upgrade your browser to a more standards-compliant one. For example, <a href="http://getfirefox.com">Mozilla Firefox</a> or <a href="http://google.com/chrome">Google Chrome</a></div></audio>
+<div id="oggSupport" class="compwarn">Your browser does not contain the standard codecs required for audio and video in HTML5 (Ogg). If you wish to continue, please make sure you have Ogg support installed - you can find an installer at <a href="http://www.xiph.org/quicktime/download.html">the Xiph website</a>. You could also install a browser with this built in - such as <a href="http://getfirefox.com">Mozilla Firefox</a> or <a href="http://google.com/chrome">Google Chrome</a>
+</div>
 <div id="login">
 <form name="form" action="login.php" method="post" onSubmit="return validate();">
 <?php echo $badlogin; ?>
@@ -24,6 +27,7 @@ else {
 <input type="text" name="password" id="password" class="text" value="Password" onClick="clickpass();" onFocus="clickpass();" onBlur="blurpass();"/> 
 <br />
 <input type="submit" class="submit" value="Login"/>
+<input type="button" onClick="window.location.href='/register.php'" class="submit" value="Register"/>
 <br />
 </form>
 </div>
@@ -37,11 +41,6 @@ else {
 <a href="javascript:document.Demo.submit();">Demo</a>
 </li>
 
-</ul>
-<ul class="users">
-<li>
-<a href="/register.php">Register</a>
-</li>
 </ul>
 <?php include"footer.php";?>
 <? } ?>
