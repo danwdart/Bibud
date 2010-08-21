@@ -16,6 +16,25 @@ else if (twstatus.indexOf("twimg") != -1) {
 }
 }
 
+if (document.getElementById('facebook').value=="on") {
+fbemail=document.getElementById('fbemail').value;
+fbpassword=document.getElementById('fbpassword').value;
+statustext=document.getElementById('status').value;
+fbstatus=doAjaxSynchronous("apps/internet/microblog/mb.php?service=facebook&email="+fbemail+"&pass="+fbpassword+"&status="+statustext);
+if (fbstatus.indexOf("FB OK") != -1) {
+  alert ("Debug: Facebook success");
+}
+/*if (twstatus.indexOf("Could not authenticate you") != -1) {
+  alert ("I could not authenticate your Twitter account");
+}*/
+/*if (twstatus.indexOf("twimg") != -1) {
+  alert ("Debug: Twitter success");
+}
+*/
+}
+
+
+
 if (document.getElementById('identica').value=="on") {
 idusername=document.getElementById('idusername').value;
 idpassword=document.getElementById('idpassword').value;
@@ -28,6 +47,10 @@ else if (idstatus.indexOf("bibud") != -1) {
   alert ("Debug: Identica success");
 }
 }
+
+
+
+
 
 if (document.getElementById('custom').value=="on") {
 cuusername=document.getElementById('cuusername').value;
@@ -57,6 +80,12 @@ else if (custatus.indexOf("bibud") != -1) {
   Twitter &nbsp;<input type="checkbox" id="twitter" name="twitter" />
   Username: <input type="text" id="twusername" name="twusername" style="width:190px;" />&nbsp;&nbsp;
   Password: <input type="password" id="twpassword" name="twpassword" style="width:190px;" />
+</div>
+<br />
+<div id="facebookbox" style="font-size:14pt;padding-left:30px;">
+  Facebook &nbsp;<input type="checkbox" id="facebook" name="facebook" />
+  Email: <input type="text" id="fbemail" name="fbemail" style="width:190px;" />&nbsp;&nbsp;
+  Password: <input type="password" id="fbpassword" name="fbpassword" style="width:190px;" />
 </div>
 <br />
 <div id="identicabox" style="font-size:14pt;padding-left:30px;">
