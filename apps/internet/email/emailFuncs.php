@@ -24,7 +24,7 @@ $row=mysql_fetch_assoc($result);
 echo "\n\n<br /><br />".$row['sender']." wrote:\n<br />".$row['text'];
 }
 else if (isset($_GET['getSender'])) {
-$query="SELECT concat(u.fname,' ',u.lname) as sender FROM email e left join users u on u.id=e.sender_id  WHERE e.id=".$_GET['id']." AND e.recipient_id='$user_id' LIMIT 1;";
+$query="SELECT username as sender FROM email e left join users u on u.id=e.sender_id  WHERE e.id=".$_GET['id']." AND e.recipient_id='$user_id' LIMIT 1;";
 $result=mysql_query($query);
 if (!$result) {
 echo "Could not retreive sender.";

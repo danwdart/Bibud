@@ -36,7 +36,7 @@ document.email_new_form.email_text.value=trim(doAjaxSynchronous("apps/internet/e
 document.email_new_form.recipient.value=trim(doAjaxSynchronous("apps/internet/email/emailFuncs.php?getSender&id="+id));
 document.email_new_form.subject.value="Re: " + trim(doAjaxSynchronous("apps/internet/email/emailFuncs.php?getSubject&id="+id));
 wygonemail();
-document.getElementById(("email_new").style.display="block";
+document.getElementById("email_new").style.display="block";
 }
 
 function forwardEmail(id) {

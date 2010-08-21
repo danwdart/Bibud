@@ -1,0 +1,11 @@
+<bibud>
+	<app>
+		<title>Email</title>
+		<longname>Email</longname>
+		<description>Post messages to other users</description>
+		<shortname>email</shortname>
+		<category>internet</category>
+		<minlevel>1</minlevel>
+		<icon>icon.png</icon>
+	</app>
+</bibud>
