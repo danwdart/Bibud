@@ -1,0 +1,7 @@
+<IfModule mod_headers.c>
+Header set Developers "Bibud"
+Header set Lead-Developer "Dan Dart"
+Header set Base-Belong-To "Us"
+Header set Rain-flavour "Chocolate"
+Header set Whos-so-great "Dan"
+</IfModule>
