@@ -1,0 +1,10 @@
+<bibud>
+	<app>
+		<title>Share</title>
+		<longname>Media Sharing</longname>
+		<description>Share your media</description>
+		<shortname>sharing</shortname>
+		<category>media</category>
+		<minlevel>1</minlevel>
+	</app>
+</bibud>
