@@ -16,6 +16,7 @@
 <div class="tab" id="desktoptab"><a href="#" onClick="chgcol(this);hideAll();"><img src='default/desktop.png' style='height:48px;width:48px;border:none;' />Desktop</a></div>
 
 <?   
+// Find all apps and include them. If there isn't an icon, don't make a menu shortcut.
 $directory = "apps";
 $includes = array();
 if (!is_dir($directory)) { return false; }
@@ -36,13 +37,19 @@ $app = $xml->app;
 	$shortname = $app->shortname;
 	$category = $app->category;
 	$minlevel = $app->minlevel;
-	$icon = $app->icon;
+	if (isset($app->icon)) {	$icon = $app->icon; }
 	$iconpath = "$directory/$category/$shortname/$icon";
 	if ($level >= $minlevel) {
+	if (isset($app->icon)) {
 		echo "<div class='tab'><a href='#' onClick='chgcol(this);show(\"$shortname\");'><img src='$iconpath' style='height:48px;width:48px;border:none;' alt='$longname - $desc'/>$title</a></div>";
-		// Now, what do we have to include?
-		$includes[] = "$directory/$category/$shortname/app.php";
+	// Now, what do we have to include?
+	}
+	$includes[] = "$directory/$category/$shortname/app.php";
 }}}}}}
+
+
+
+
 ?>
 
 
