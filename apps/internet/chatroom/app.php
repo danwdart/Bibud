@@ -58,10 +58,13 @@ chmeonline=setTimeout("chimonline();",4000);
 }
 
 function chnewim() {
+	// Filter nothingness
+	if (document.chatroom.chattext.value.trim() != "") {
 doAjaxFunc("apps/internet/chatroom/newim.php?text="+document.chatroom.chattext.value,"chcheckIMs();");
 // Make yours appear now. Eliminate any appearance of lag. document.getElementById('chatroom_ims')
 document.chatroom.chattext.value="";
 document.chatroom.chattext.focus();
+}
 }
 
 function chscroll() {
