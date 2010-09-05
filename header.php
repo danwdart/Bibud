@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--test-->
 <meta name="keywords" 
 content="bibud,byebud,internet,social,operating,system,html5,php,mysql,javascript,css,website,audio,video,chat,blog,email,friends,platform" 
 />
@@ -12,10 +13,10 @@ Includes audio and video players, email, blog, chatroom and much more."
 <script type="text/javascript" src="scripts/login.js"></script>
 </head>
 
-<body>
+<body onLoad="init()">
 <header>
 <a href="/">
 <img id="logo" src="images/bibud.png" />
-<span id="version">Alpha 5</span>
+<span id="version">alpha 5.1</span>
 </a>
 </header>
