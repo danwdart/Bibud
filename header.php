@@ -15,7 +15,7 @@ Includes audio and video players, email, blog, chatroom and much more."
 
 <body onLoad="init()">
 <header>
-<a href="/">
+<a href="index.php">
 <img id="logo" src="images/bibud.png" />
 <span id="version">alpha 5.1</span>
 </a>

@@ -1,6 +1,6 @@
 <div id="links">
 <br/>
-<a href="/contact.php">Contact us</a> - <a href="/help.php">Help</a> - <a href="http://github.com/dandart/Bibud">Git</a> - <a href="/settings.php">Login Settings</a>
+<a href="contact.php">Contact us</a> - <a href="http://github.com/dandart/Bibud">Git</a> - <a href="http://github.com/dandart/Bibud/issues">Bugs</a>
 <br/>
 <span>&copy; bibud 2010</span>
 </div>

@@ -4,7 +4,32 @@ function init() {
 	if(!supports_ogg){
 		document.getElementById("oggSupport").style.display = "block";
 	}
+	if (getCookie('username') != "") {
+		document.form.save.checked='1';
+		document.form.username.value=getCookie('username');
+		// And give them focus
+		clickpass();
+		clickuser();
+		document.form.password.value=getCookie('password');
+	}
 }
+
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+  {
+  c_start=document.cookie.indexOf(c_name + "=");
+  if (c_start!=-1)
+    {
+    c_start=c_start + c_name.length+1;
+    c_end=document.cookie.indexOf(";",c_start);
+    if (c_end==-1) c_end=document.cookie.length;
+    return unescape(document.cookie.substring(c_start,c_end));
+    }
+  }
+return "";
+}
+
 function supports_video() {
   return !!document.createElement('video').canPlayType;
 }
@@ -48,8 +73,8 @@ document.form.username.style.color="#999999";
 
 function blurpass() {
 if (document.form.password.value=="") {
-document.form.password.value="Password";
 document.form.password.type="text";
+document.form.password.value="Password";
 document.form.password.style.color="#999999";
 }
 }

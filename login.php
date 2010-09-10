@@ -9,6 +9,17 @@ if ($_POST['login'] == "Login") {
   $password = sha1($password);
   $result = mysql_query("SELECT * FROM users WHERE lower(username) = lower('$username') AND `password` = '$password'");
   if (mysql_num_rows($result) == 1) {
+	  # Save the user's account details for logging on later.
+		if (isset($_POST['save'])) {
+			setcookie("username",$_POST['username']);
+			setcookie("password",$_POST['password']);
+		}
+		else {
+			setcookie("username","");
+			setcookie("password","");
+			$_COOKIE = null;
+			unset($_COOKIE);
+		}
     # We have login success! Set the variables and go back to index to make them permanent.
     $row=mysql_fetch_assoc($result);
     $_SESSION['username'] = $username;

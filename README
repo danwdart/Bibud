@@ -5,7 +5,7 @@ Step 2:
 Make sure PHP, MySQL, php5-curl and Postfix are installed.
 
 Step 3:
-Edit globals.php and change the MySQL host, user (if applicable) and password. Note: This is only for creating users and initially setting up the system. The user must have user creation and modification privileges.
+Edit includes/db_connect.php and change the MySQL host, user (if applicable) and password. Note: This is only for creating users and initially setting up the system. The user must have user creation and modification privileges.
 
 Step 4:
 Run setup.php
