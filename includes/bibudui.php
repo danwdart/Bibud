@@ -63,7 +63,7 @@ $app = $xml->app;
 <div style="background-color:#dddddd;top:50px;left:50px;width:400px;height:300px;position:absolute;padding:5px;z-index:-1;border-style:ridge;">
 <b>Welcome to Bibud Web Desktop.</b>
 <br /><br />You are logged in as <?php echo $username." (".$fname." ".$lname.")"; ?>.
-<br /><br /><b>New:</b> Alpha 5 features easier app APIs, standalone apps, security and bugfixes
+<br /><br /><b>New:</b> Alpha 5.1 features better homepage, bugfixes
 <br /><br /><b>Coming soon:</b> Media sharing and web APIs
 </div>
 
